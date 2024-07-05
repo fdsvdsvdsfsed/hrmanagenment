@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="10" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.hrvivek.LoginController">
+    <children>
+        <Label text="Email" />
+        <TextField fx:id="emailField" />
+        <Label text="Password" />
+        <PasswordField fx:id="passwordField" />
+        <Button text="Login" fx:id="loginButton" onAction="#handleLogin" />
+    </children>
+</VBox>

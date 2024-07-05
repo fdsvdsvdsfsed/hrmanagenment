@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="CENTER" prefHeight="425.0" prefWidth="445.0" spacing="20.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hrvivek.EmployeeController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <children>
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Employee" />
+        <TextField fx:id="uid" promptText="ID" />
+        <TextField fx:id="uname" promptText="Name" />
+        <TextField fx:id="uemail" promptText="Email" />
+        <TextField fx:id="usalary" promptText="Salary" />
+        <Button mnemonicParsing="false" text="Create" onAction="#InsertData" />
+        <Button mnemonicParsing="false" text="Update" onAction="#UpdateData" />
+        <Button mnemonicParsing="false" text="Delete" onAction="#DeleteData" />
+        <Button onAction="#onHelloButtonClick" text="View" />
+        <Button mnemonicParsing="false" text="Back" fx:id="Backbutton" onAction="#Back" />
+        <TableView fx:id="userTable" prefHeight="200.0" prefWidth="327.0">
+            <columns>
+                <TableColumn fx:id="id" prefWidth="75.0" text="ID" />
+                <TableColumn fx:id="name" prefWidth="75.0" text="Name" />
+                <TableColumn fx:id="email" prefWidth="75.0" text="Email" />
+                <TableColumn fx:id="salary" prefWidth="75.0" text="Salary" />
+            </columns>
+        </TableView>
+    </children>
+</VBox>
